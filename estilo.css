@@ -1,16 +1,33 @@
-/*:root {
-    --input-linear: linear-gradient(128deg,#000000,#353535);
-    --input-error:red;
-    --button-input-linear: linear-gradient(128deg,#353535, #000000,#353535);
-    --button-disabled:#acacac;
+html[data-theme='light']{
+    --input-linear: linear-gradient(128deg,#5d7a8c,#ff5a00);
+    --input-error: red;
+    --button-linear: linear-gradient(128deg,#ff5a00, #5d7a8c,#ff5a00);
+    --button-disabled: #acacac;
     --button-success: rgb(18, 151, 107);
-    --white:#fff;
+    --white: #fff;
     --black: #303030;
     --gray: #929292;
-    --light-gray:#cfcfcf;
+    --light-gray: #cfcfcf;
     --border-height: 1px;
 }
-*/
+
+html[data-theme='dark']{
+    --input-linear: linear-gradient(128deg,#000000,#353535);
+    --input-error: red;
+    --button-linear: linear-gradient(128deg,#353535, #000000,#353535);
+    --button-disabled: #acacac;
+    --button-success: rgb(18, 151, 107);
+    --white: #fff;
+    --black: #303030;
+    --gray: #929292;
+    --light-gray: #cfcfcf;
+    --border-height: 1px;
+}
+
+input{
+  background-color:var(--input-linear);
+}
+/*
 :root {
     --input-linear: linear-gradient(128deg,#000000,#353535);
     --input-error: red;
@@ -23,6 +40,7 @@
     --light-gray: #cfcfcf;
     --border-height: 1px;
   }
+  */
   
   body {
     padding: 0;

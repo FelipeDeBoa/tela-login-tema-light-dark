@@ -77,3 +77,15 @@ const init = () => {
 }
 
 window.onload = init;
+
+
+///Tema DARK e Light 
+
+let checkbox = document.querySelector('input[name=theme]');
+checkbox.addEventListener('change', function(){
+    if (this.checked) {
+        document.documentElement.setAttribute('data-theme','dark');
+    } else {
+        document.documentElement.setAttribute('data-theme','light');
+    }
+});
